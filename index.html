@@ -5,16 +5,16 @@
 </head>
 <body>
     <script>
-        // Esta función muestra un alert y cierra la ventana después de 3 segundos
-        function showAlertAndClose() {
-            alert('Esta alerta se cerrará automáticamente después de 3 segundos.');
+        // Esta función muestra un alert y redirige a otra página después de 3 segundos
+        function showAlertAndRedirect() {
+            alert('Serás redirigido en 3 segundos.');
             setTimeout(function() {
-                window.close();
+                window.location.href = 'https://www.example.com';
             }, 3000);
         }
 
-        // Llama a la función para mostrar el alert y cerrar la ventana
-        showAlertAndClose();
+        // Llama a la función para mostrar el alert y redirigir
+        showAlertAndRedirect();
     </script>
 </body>
 </html>
