@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto-close Alert</title>
+</head>
+<body>
+    <script>
+        // Esta función muestra un alert y cierra la ventana después de 3 segundos
+        function showAlertAndClose() {
+            alert('Esta alerta se cerrará automáticamente después de 3 segundos.');
+            setTimeout(function() {
+                window.close();
+            }, 3000);
+        }
+
+        // Llama a la función para mostrar el alert y cerrar la ventana
+        showAlertAndClose();
+    </script>
+</body>
+</html>
